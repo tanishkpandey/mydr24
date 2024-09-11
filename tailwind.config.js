@@ -14,6 +14,20 @@ export default {
           300: '#B7B7B7',       // Black 4
         },
       },
+      fontFamily: {
+        roboto: ['Roboto', 'sans-serif'],
+        rubik: ['Rubik', 'sans-serif'],
+      },
+      fontSize: {
+        'head': ['24px', '32px'],
+        'subhead': ['18px', '28px'],
+        'title': ['16px', '24px'],
+      },
+      boxShadow: {
+        crousalShadow: '6px 4px 27px 0px #01B8061A',
+        healthCheckupShadow: '0px 3.78px 3.78px 0px #0000001A',
+
+      },
     },
   },
   plugins: [],

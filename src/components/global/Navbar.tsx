@@ -1,8 +1,6 @@
 import React from "react";
-import Desktop_logo from "../assets/images/Desktop_logo.svg"
-import SearchWithDropdown from "./SearchWithDropDown";
-
-import { ReactComponent as NavbarPhoneIcon } from "../assets/icons/Navbar_phone_icon.svg";
+import Desktop_logo from "../../assets/images/Desktop_logo.svg"
+import SearchWithDropdown from "../SearchWithDropDown";
 
 const Navbar: React.FC = () => {
     return (
