@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { HiOutlineChevronLeft, HiOutlineChevronRight } from 'react-icons/hi';
-
+import checkupImg from '../../assets/images/checkupImg.png';
 // Example package data
 const packages = [
     {
@@ -101,30 +101,32 @@ const FullBodyCheckupPackages: React.FC = () => {
     };
 
     return (
-        <section className="py-8">
+        <section className="py-10">
             <div className="flex justify-between items-center mb-4">
-                <h2 className="text-lg font-bold">Full Body Checkup Packages</h2>
-                <a href="#" className="text-blue-600">View All</a>
+                <h2 className="text-head font-bold">Full Body Checkup Packages</h2>
+                <a href="#" className="text-blue-600 font-bold">View All</a>
             </div>
             <Slider {...settings}>
                 {packages.map((pkg, index) => (
-                    <div key={index} className="p-4">
-                        <div className="bg-white shadow-lg rounded-lg p-4 flex flex-col justify-between h-[350px]">
+                    <div key={index} className="px-2"> {/* Adding padding to each slide */}
+                        <div className="bg-[#f6f6f6] rounded-lg p-4 flex flex-col justify-between">
                             <img
-                                src={pkg.image}
+                                src={checkupImg}
                                 alt={pkg.title}
                                 className="h-[150px] w-full object-cover rounded-lg mb-4"
                             />
                             <h3 className="text-md font-bold mb-1">{pkg.title}</h3>
                             <p className="text-gray-500 mb-4">{pkg.testsIncluded}</p>
-                            <div className="flex items-center justify-between mb-4">
-                                <span className="text-red-600 font-bold">{pkg.price}</span>
-                                <span className="line-through text-gray-500">{pkg.originalPrice}</span>
-                                <span className="text-red-600 font-bold">{pkg.discount}</span>
+                            <div className='flex items-start gap-2 justify-between h-full'>
+                                <div className="flex items-center gap-2 justify-between mb-4 mt-2">
+                                    <span className="text-black font-bold text-[15px]">{pkg.price}</span>
+                                    <span className="line-through text-gray-500 text-[15px]">{pkg.originalPrice}</span>
+                                    <span className="text-red-600 font-bold text-[15px]">{pkg.discount}</span>
+                                </div>
+                                <button className="bg-blue-600 text-white font-semibold py-2 rounded-lg w-[117px]">
+                                    Book Now
+                                </button>
                             </div>
-                            <button className="bg-blue-600 text-white font-semibold py-2 rounded-lg w-full">
-                                Book Now
-                            </button>
                         </div>
                     </div>
                 ))}

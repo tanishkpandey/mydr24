@@ -211,3 +211,18 @@ export const Whydata = [
         icon: "👨‍👩‍👦‍👦", // Use an actual icon here as per your need
     },
 ];
+
+export const specialties = [
+    { title: 'CARDIOLOGY', icon: '/path/to/cardiology-icon.png' }, // Replace with actual icon path
+    { title: 'NEUROLOGY', icon: '/path/to/neurology-icon.png' },
+    { title: 'ORTHOPAEDIC', icon: '/path/to/orthopaedic-icon.png' },
+    { title: 'NEPHROLOGY', icon: '/path/to/nephrology-icon.png' },
+    { title: 'PULMONOLOGY', icon: '/path/to/pulmonology-icon.png' },
+    { title: 'DENTISTRY', icon: '/path/to/dentistry-icon.png' },
+    { title: 'ENDOCRINOLOGY', icon: '/path/to/endocrinology-icon.png' },
+    { title: 'NEONATOLOGY', icon: '/path/to/neonatology-icon.png' },
+    { title: 'PULMONOLOGY', icon: '/path/to/pulmonology-icon.png' },
+    { title: 'DENTISTRY', icon: '/path/to/dentistry-icon.png' },
+    { title: 'ENDOCRINOLOGY', icon: '/path/to/endocrinology-icon.png' },
+    { title: 'NEONATOLOGY', icon: '/path/to/neonatology-icon.png' },
+];
