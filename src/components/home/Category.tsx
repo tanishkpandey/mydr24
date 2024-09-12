@@ -56,7 +56,7 @@ const Category: React.FC = () => {
     return (
         <section className="py-8">
             <div className="flex justify-between items-center mb-4">
-                <h2 className="text-lg font-bold">Shop By Category</h2>
+                <h2 className="text-head font-bold">Shop By Category</h2>
                 <a href="#" className="text-blue-600 font-bold">View All</a>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
